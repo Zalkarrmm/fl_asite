@@ -1,8 +1,8 @@
 body{
     margin: 0;
-    overflow-x: hidden;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 html{
     scroll-behavior: smooth;
@@ -479,6 +479,7 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
 }
 .block3_inline{
     margin-top: 60px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -511,7 +512,6 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
 
 
 
-
 /* blokc4_center */
 
 .blokc4_center{
@@ -522,6 +522,7 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     text-align: center;
 }
 .block4_inline{
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -681,9 +682,6 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
 }
 input[type="text1"]::placeholder { color: black; font-size: 15px; } 
 @media(max-width:526px){
-    body{
-        overflow: hidden;
-    }
     .img_firstblokc{
         width: 80%;
         height: 415px;
@@ -1455,22 +1453,24 @@ margin-right: auto;
 }
 /*  */
 .usualQuestions{
-    width: 100%;
-    padding: 20px;
+    padding: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    height: auto;
     justify-content: center;
-    height: 60vh;
+    min-height: 60vh;
     position: relative;
 }
 .questionCard{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 10px;
     width: 80%;
+    margin-bottom: 20px;
     height: 25vh;
     position: relative;
     border: 1px solid black;    
@@ -1561,7 +1561,6 @@ margin-right: auto;
     display: flex;
     justify-content: center;
 }
-
 
 .blokc15_center{
     margin-top: 80px;
@@ -1659,7 +1658,7 @@ margin-right: auto;
     margin: 0px;
     text-align: center;
 }
-@media screen and (max-width:380px){
+@media screen and (max-width:800px){
     .logoImg{
         width: 60%;
         height: 40px;
@@ -1688,7 +1687,193 @@ margin-right: auto;
         text-align: left;
         padding: 0px;
     }
-    .sixBlocks{                                                                                                        
+    .sixBlocks{    
+        flex-direction: column;
+        height: auto;
+    }
+    .blokc15_center{
+        display:flex;
         flex-direction: column;
     }
+    .git_init iframe{
+        width: 60%;
+        height: 40vh;
+    }
 }
+@media screen and (max-width:430px){
+    .right ul li{
+        font-size: 15px;
+    }
+    .right{
+        width: 60%;
+    }
+    .colons{
+        width: 100%;
+    }
+    .left{
+        width: 70%;
+    }
+    .left li{
+        font-size: 10px;
+    }
+    .infos img{
+        width: 20px;
+        height: 20px;
+    }
+    .centerrrtext{
+        margin-top: 15vh;
+        font-size: 20px !important;
+    }
+    .scaryList{
+        font-size: 10px;
+    }
+    .card img{
+        width: 70px;
+        height: 60px;
+    }
+    .card p{
+        font-size: 13px;
+    }
+    .blokc3_center{
+        height: 50vh;
+    }
+    .card_stares img{
+        width: 190px;
+        height: 150px;
+    }
+    .card_stares{
+        width: 210px;
+    }
+    .bottomText p{
+        display: none;
+    }
+    .bottomText{
+        font-weight: 400;
+    }
+    .bText{
+        width: 110%;
+        font-size: 10px;
+        height: 5vh;
+    }
+    .banner_2 h1{
+        font-size: 15px;
+    }
+    .banner_2 p{
+        font-size: 10px;
+    }
+    .banner_2 button{
+        font-size: 10px;
+        padding: 10px;
+    }
+    .card_stares{
+        margin: -30px 0px;
+    }
+    .card_stares:hover{
+        margin-bottom: 5vh !important;
+    }
+    .miniBlocks img{
+        width: 180px !important;
+        height: 180px !important;
+        margin: 5px 0px;
+    }
+    .h11{
+        height: 20vh;
+        font-size: 20px !important;
+    }
+    .blokc4_center{
+        height: auto;
+        margin-top: 5px;
+    }
+    .blokc6_card img{
+        margin-top: 0px;
+        width: 200px;
+        height: 200px;
+    }
+    .swiper-slide{
+        width: 300px !important;
+        height: 300px !important;
+    }
+    .slot-header img{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .stepName{
+        font-size: 10px;
+    }
+    .stepCommit{
+        font-size: 10px;
+    }
+    .slot-add img{
+        width: 50px !important;
+        height: 50px !important;
+        margin: 10px;
+    }
+    .slot{
+        padding: 10px;
+        width: 150px !important;
+        height: 250px !important;
+    }
+    .block11Text{
+        font-size: 13px;
+    }
+    .blokc9_center , .blokc10_center , .blokc6_card{
+        width: 90%;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        overflow: hidden;
+    }
+    .blokc13_inline img{
+        width: 80%;
+        height: 30vh;
+    }
+    .openBox{
+        width: 90%;
+        margin: 0px;
+    }
+    .short{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+    .blokc4_input form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blokc4_input form button{
+        width: 100px;
+    }
+    .feed-header img{
+        width: 150px;
+        height: 150px;
+    }
+    .feedbacks{
+        width: 400px;
+        height: 200px;
+    }
+    .feed-body p{
+        font-size: 15px;
+    }
+    .askContacts{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .askContacts p{
+        font-size: 15px;
+        width: 70%;
+    }
+    .block11{
+        width: 70%;
+    }
+    .swiper-slide{
+        margin: 0px;
+    }
+}                             
