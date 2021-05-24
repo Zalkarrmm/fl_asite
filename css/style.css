@@ -125,6 +125,11 @@ html{
     top: 1%;
     right: 1%;
 }
+.leftPic{
+    width: 60%;
+    height: 60vh;
+    object-fit: cover;
+}
 .orderText{
     font-size: 25px;
     font-weight: 500;
@@ -563,12 +568,14 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
 }
 
 .card_stares{
-    width: 400px;
+    width: 430px;
     height: 300px;
+}
+.card_stares img{
+    object-fit: cover;
 }
 .card_stares h1{
     margin: 0;
-    margin-left: 27px;
     padding: 0;
 }
 .card_stares p{
@@ -582,13 +589,19 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     transition: .3s;
     background-color: white;
 }
+.card_stares img{
+    width: 380px;
+    height: 200px;
+}
 .banner_2{
     text-align: left;
     opacity: 0;
     transition: 0.5s;
     padding: 20px;
 }
-
+.banner_2 p{
+    margin-top: -30px;
+}
 .card_stares{
     background-color: rgba(0, 0, 0, 0);
     position: relative;
@@ -597,7 +610,7 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     overflow: hidden;
 }
 .card_stares:hover{
-    margin-bottom: 30vh;
+    margin-bottom: 10vh;
     background-color: rgb(255, 193, 77);
 }
 .card_stares:hover .banner_2{
@@ -610,7 +623,8 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     background-color: rgba(255, 255, 255, 0);
 }
 .card_stares:hover{
-    height: 90vh;
+    padding-bottom: 20vh;
+    height: 58vh !important;
 }
 /* .card_stares{
     position: relative;
@@ -631,9 +645,9 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     height: 40vh;
 }
 .miniBlocks img{
-    width: 200px;
+    width: 120px;
     margin: 0 10px;
-    height: 30vh;
+    height: 120px;
     z-index: 4334;
 }
 @media(max-width:1156px){
@@ -682,6 +696,13 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
 }
 input[type="text1"]::placeholder { color: black; font-size: 15px; } 
 @media(max-width:526px){
+    .card_stares:hover{
+        padding-bottom: 0vh;
+        height: 47vh !important;
+    }
+    .banner_2 p{
+        margin-top: -50px;
+    }
     .img_firstblokc{
         width: 80%;
         height: 415px;
@@ -1268,7 +1289,8 @@ margin-right: auto;
     list-style: none;
 }
 .short{
-    width: 40% !important;
+    width: 100% !important;
+    border: none;
 }
 /*  */
 .askContacts{
@@ -1452,41 +1474,34 @@ margin-right: auto;
     text-align: center;
 }
 /*  */
-.usualQuestions{
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    justify-content: center;
-    min-height: 60vh;
-    position: relative;
-}
+
 .questionCard{
+    text-align: left;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    /* justify-content: space-between; */
     align-items: center;
-    text-align: center;
     padding: 10px;
     width: 80%;
-    margin-bottom: 20px;
-    height: 25vh;
-    position: relative;
-    border: 1px solid black;    
+    margin-bottom: 0px;
+    padding: 0px 0px;
+    position: relative;  
 }
 .getCollapse{
+    width: 60%;
     position: absolute;
-    top: 3%;
-    right: 1%;
+    top: 35%;
+    right: -10%;
     width: 40px;
     height: 40px;
     border: none;
     border-radius: 100%;
-    background-color: rgb(211, 211, 211);
+    background-color: orange;
     font-size: 30px;
     transition: .4s;
     color: white;
+}
+.usualQuestions{
+    padding-left: 20px;
 }
 .getCollapse:hover{
     transition: .4s;
@@ -1494,11 +1509,19 @@ margin-right: auto;
     color: grey;
 }
 .collapsed ,.collapsed2, .collapsedd ,.collapsedd2{
-    display: none;
+    opacity: 0;
 }
 .collapsed.d-block , .collapsedd.d-block , .collapsed2.d-block , .collapsedd2.d-block{
     width: 70%;
-    display: block;
+    opacity: 1;
+    transition: .5s;
+    padding: 10px 0px; 
+    /* border-bottom: 1px solid grey; */
+}
+.questionn{
+    border-bottom: 1px solid grey;
+    padding: 30px 0px;
+    border-top: solid grey 1px;
 }
 
 /*  */
@@ -1555,7 +1578,9 @@ margin-right: auto;
 .map_down_items:nth-child(3) li span{
     color: orange;
 }
-
+.navTopNum{
+    width: 200px;
+}
 /*  */
 .blokc16_inline{
     display: flex;
@@ -1682,6 +1707,7 @@ margin-right: auto;
         margin: 0px;
         font-size: 12px;
     }
+
     .ul_3{
         margin-top: -20px;
         text-align: left;
@@ -1765,9 +1791,9 @@ margin-right: auto;
         font-size: 10px;
         padding: 10px;
     }
-    .card_stares{
+    /* .card_stares{
         margin: -30px 0px;
-    }
+    } */
     .card_stares:hover{
         margin-bottom: 5vh !important;
     }
@@ -1835,9 +1861,10 @@ margin-right: auto;
     }
     .short{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         text-align: center;
-        height: auto;
+        height: 40vh;
         padding: 20px;
     }
     .blokc4_input form{
@@ -1850,15 +1877,16 @@ margin-right: auto;
         width: 100px;
     }
     .feed-header img{
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        object-fit: cover;
+        height: 100px;
     }
     .feedbacks{
-        width: 400px;
-        height: 200px;
+        width: 200px;
+        height: 100px;
     }
     .feed-body p{
-        font-size: 15px;
+        font-size: 10px;
     }
     .askContacts{
         display: flex;
@@ -1876,4 +1904,22 @@ margin-right: auto;
     .swiper-slide{
         margin: 0px;
     }
+    .collapsed.d-block , .collapsedd.d-block , .collapsed2.d-block , .collapsedd2.d-block{
+        width: 70%;
+        opacity: 1;
+        transition: .5s;
+        padding: 0px 0px; 
+        /* border-bottom: 1px solid grey; */
+    }
+    .pr-20{
+        padding-right: 20px;
+    }
+    .questionn{
+        padding: 10px 5px;
+    }
+
 }                             
+.borders p{
+    position: relative;
+    width: 100%;
+}
