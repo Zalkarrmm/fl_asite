@@ -2,7 +2,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
 }
 html{
     scroll-behavior: smooth;
@@ -127,7 +126,7 @@ html{
     right: 1%;
 }
 .leftPic{
-    width: 60%;
+    width: 40%;
     height: 60vh;
     object-fit: cover;
 }
@@ -181,18 +180,17 @@ button{
 
 
 .blokc1_center{
-    margin-top: 20px;
+    margin-top: 50px !important;
 }
 .blokc1_inline{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
-
 .right{
-    margin-left: 20px;
-    width: 400px;
+    width: 28%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,8 +221,7 @@ button{
     margin-left: -30px;
 }
 .left{
-    margin: 10px 20px !important;
-    width: 400px;
+    width: 28%;
     height: 400px;
     border: 4px solid orange;
 }
@@ -253,47 +250,106 @@ button{
 }
 
 @media(max-width:1252px){
-    .right{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
     .blokc1_inline{
         display: flex; 
         align-items: center;
         justify-content: flex-start;
         flex-wrap: wrap;
     }
-    .left{
-        margin: 0px 20px;
-        width: 400px;
-        height: 450px;
-        transition: .3s;
-        border: 4px solid orange;
-    }
 }
 
 
-@media(max-width:1118px){
+@media screen and (max-width:1118px){
+
+    .workShem{
+        margin-bottom: 70px !important;
+    }
+
+    .blokc9_center_alt .block9_card{
+        margin-bottom: 100px !important;
+    }
+
+    .block9_card{
+        width: 35% !important;
+    }
+    
+    .minis{
+        height: 260px !important;
+    }
+
+    .blokc9inline{
+        justify-content: space-around;
+    }
+
+    .blokc9_center{
+        margin: 280px 0 !important;
+    }
+
+    .blokc9_center_alt{
+        margin-top: 700px !important;
+        margin-bottom: 400px !important;
+    }
+    
+    .leftPic{
+        width: 60% !important;
+        height: 70vh !important;
+        margin-bottom: 40px;
+    }
+
+    .card{
+        margin-bottom: 30px !important;
+    }
+
+    .scaryList{
+        width: 60% !important;
+        margin-bottom: 60px !important;
+    }
+
+    .feedPic{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .feedbacks{
+        flex-direction: column;
+        margin-top: 30px;
+        align-items: center !important;
+        justify-content: space-around !important;
+        height: 100% !important;
+    }
+
+    .feed-body{
+        width: 100% !important;
+        height: 55% !important;
+    }
+
+    .feed-header{
+        width: 100% !important;
+        height: 40% !important;
+    }
+
+    .feed-container{
+        height: 90vh !important;
+    }
+
+    .blokc9inline{
+        width: 90% !important;
+    }
+
+    .blokc7_img{
+        width: 85% !important;
+    }
+
+    .blokc6_center{
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
     .right{
-        width: 70%;
-        height: 100%;
-        display: flex;
-        justify-content: center;    
+        width: 60%;
+        margin-bottom: 40px;
     }
-    .left ul{
-       padding-left: 10;
-    }
-    .right ul{
-        padding-left: 10;
-     }
     .left{
-        margin: 0;
-        padding: 0;
-        margin-left: 15%;
-        width: 70%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
+        width: 60%;
     }
     .blokc1_inline{
         display: flex; 
@@ -637,11 +693,6 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     height: 300px;
 
 } */
-.img_firstblokc{
-    width: 500px;
-    height: 415px;
-    margin-left: 20px;
-}
 .sixBlocks{
     z-index: 3232;
     display: flex;
@@ -711,11 +762,6 @@ input[type="text1"]::placeholder { color: black; font-size: 15px; }
     }
     .banner_2 p{
         margin-top: -50px;
-    }
-    .img_firstblokc{
-        width: 80%;
-        height: 415px;
-        margin-left: 25px;
     }
 }
 @media(max-width:486px){
@@ -918,6 +964,7 @@ margin-right: auto;
     width: 100%;
     height: 70vh;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1123,7 +1170,6 @@ margin-right: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
 }
 .blokc9_center h1{
     text-align: center;
@@ -1166,20 +1212,15 @@ margin-right: auto;
     object-fit: cover;
 }
 
-.blokc10_center .mySwiper{
-    width: 80%;
-    height: 60vh;
-}
 .blokc10_center .swiper-container .swiper-slide{
     width: 750px !important;
 }
 
 .feedbacks{
-    padding: 15px;
-    padding-left: 25px;
+    padding: 30px;
     border-radius: 5px;
     color: white;
-    height: 35vh;
+    width: 100% !important;
     display: flex;
     align-items: center ;
     justify-content: space-around;
@@ -1200,13 +1241,16 @@ margin-right: auto;
     width: 200px;
     height: 200px;
 }
+
+.h12{
+    margin-top: 80px;
+}
 .feed-container{
-    width: 80%;
+    width: 100% !important;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center ;
-    height: 60vh;
+    height: 50vh;
 }
 @media(max-width:1274px){
     .block9_card i{
@@ -1253,7 +1297,10 @@ margin-right: auto;
 .blokc10_center{
     margin-top: 80px;
     width: 100%;
-
+    overflow: hidden;
+}
+.blokc10_center .swiper-container_alt .swiper-wrapper .swiper-slide{
+    width: 48% !important;
 }
 .blokc10_center h1{
     text-align: center;
@@ -1338,6 +1385,8 @@ margin-right: auto;
 }
 .askContacts p{
     font-size: 25px;
+    text-align: center;
+    width: 100%;
 }
 
 .blokc11_center{
@@ -1456,8 +1505,10 @@ margin-right: auto;
 /* blokc12_center */
 
 .blokc13_center{
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
     margin-top: 50px;
+    overflow: hidden;
 }
 .blokc13_center h1{
     text-align: center;
@@ -1729,30 +1780,22 @@ margin-right: auto;
     text-align: center;
 }
 @media screen and (max-width:800px){
+
+    .swiper-container_alt .swiper-wrapper{
+        display: flex;
+    }
+
+    .swiper-container_alt .swiper-wrapper .swiper-slide{
+        width: 100% !important;
+    }
+
     .right{
         margin-left: 0px;
     }
     .logoImg{
-        width: 60%;
-        height: 40px;
+        width: 100%;
+        height: 70px;
     }
-    .centerText h2{
-        margin-top: 0px;
-        font-size: 15px;
-    }
-    .centerText p{
-        margin-top: 0px;
-        font-size: 12px;
-    }
-    .ul_1{
-        margin-top: -40px;    
-        margin-bottom: 10px;
-    }
-    .navTopText{
-        margin: 0px;
-        font-size: 12px;
-    }
-
     
     .sixBlocks{    
         flex-direction: column;
@@ -1762,261 +1805,8 @@ margin-right: auto;
         display:flex;
         flex-direction: column;
     }
-    .git_init iframe{
-        width: 60%;
-        height: 40vh;
-    }
 }
-@media screen and (max-width:430px){
-    
-    .centererText{
-        display: none !important;
-    }
-    .leftPic{
-        height: 30vh;
-        object-fit: cover;
-    }
-    .right ul li{
-        font-size: 15px;
-    }
-    .right{
-        width: 60%;
-    }
-    .colons{
-        width: 100%;
-    }
-    .left{
-        width: 70%;
-    }
-    .left li{
-        font-size: 10px;
-    }
-    .infos img{
-        width: 20px;
-        height: 20px;
-    }
-    .centerrrtext{
-        margin-top: 0vh;
-        font-size: 20px !important;
-    }
-    .card img{
-        width: 70px;
-        height: 60px;
-    }
-    .card p{
-        font-size: 13px;
-    }
-    .centerGet{
-        margin-left: 40px;
-    }
-    .blokc3_center{
-        margin-top: 5px;
-        height:65vh;
-    }
-    .card_stares img{
-        width: 190px;
-        height: 150px;
-    }
-    .card_stares{
-        width: 210px;
-    }
-    .bottomText p{
-        display: none;
-    }
-    .bottomText{
-        font-weight: 400;
-    }
-    .bText{
-        width: 110%;
-        font-size: 10px;
-        height: 5vh;
-    }
-    .banner_2 h1{
-        font-size: 15px;
-    }
-    .banner_2 p{
-        font-size: 10px;
-    }
-    .banner_2 button{
-        font-size: 10px;
-        padding: 10px;
-    }
-    /* .card_stares{
-        margin: -30px 0px;
-    } */
-    .card_stares:hover{
-        margin-bottom: 5vh !important;
-    }
-    .miniBlocks img{
-        width: 180px !important;
-        height: 180px !important;
-        margin: 5px 0px;
-    }
-    .aos-init{
-        justify-content: center !important;
-        display: flex;
-        flex-direction: column;
-        align-items: center !important;
-    }
-    .blokc5_center{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center ;
-    }
-    .block11{
-        height:50vh;
-        margin: 0px ;
-    }
-    .blokc9_center , .blokc9inline{
-        margin-top: 0px !important;
-    }
-    .blokc9inline{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .h11{
-        height: 10vh;
-        width: 70%;
-        font-size: 20px !important;
-    }
-    .blokc4_center{
-        height: auto;
-        margin-top: 5px;
-    }
-    .blokc6_card img{
-        margin-top: 0px;
-        width: 200px;
-        height: 200px;
-    }
-    .block9_card{
-        width: 100%;
-    }
-    .swiper-slide{
-        width: 300px !important;
-        height: 300px !important;
-    }
-    .slot-header img{
-        width: 100px !important;
-        height: 100px !important;
-    }
-    .stepName{
-        font-size: 10px;
-    }
-    .stepCommit{
-        font-size: 10px;
-    }
-    .slot-add img{
-        width: 50px !important;
-        height: 50px !important;
-        margin: 10px;
-    }
-    .slot{
-        padding: 10px;
-        width: 150px !important;
-        height: 250px !important;
-    }
-    .block11Text{
-        font-size: 13px;
-    }
-    .blokc9_center , .blokc10_center , .blokc6_card{
-        width: 90%;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .minis{
-        width: 200px !important;
-        height: 150px;
-    }   
-    .blokc13_inline img{
-        width: 80%;
-        height: 30vh;
-    }
-    .openBox{
-        width: 90%;
-        margin: 0px;
-    }
-    .flexed{
-        margin-top: -20px;
-    }
-    .short{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: center;
-        height: 40vh;
-        padding: 20px;
-    }
-    .blokc4_input form{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .blokc4_input form button{
-        width: 100px;
-    }
-    .feed-header img{
-        width: 100px;
-        object-fit: cover;
-        height: 100px;
-    }
-    .feedbacks{
-        width: 200px;
-        height: 100px;
-    }
-    .feed-body p{
-        font-size: 10px;
-    }
-    .askContacts{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    .askContacts p{
-        font-size: 15px;
-        width: 70%;
-    }
-    .block11{
-        width: 70%;
-    }
-    .swiper-slide{
-        margin: 0px;
-    }
-    .collapsed.d-block , .collapsedd.d-block , .collapsed2.d-block , .collapsedd2.d-block{
-        width: 70%;
-        display: block;
-        transition: .5s;
-        padding: 0px 0px; 
-        /* border-bottom: 1px solid grey; */
-    }
-    .pr-20{
-        padding-right: 20px;
-    }
-    .questionn{
-        padding: 10px 5px;
-    }
-    .centerText{
-        margin-top: 0vh !important;
-    }
-    .banner_2{
-        margin: 0px;
-    }
-    .card_stares{
-        height: 30vh;
-    }
-    .text_blokc4{
-        margin-top: 0px;   
-    }
-}                             
+                      
 .borders p{
     position: relative;
     width: 100%;
@@ -2026,11 +1816,6 @@ margin-right: auto;
 
 .work{
     width: 200% !important;
-}
-
-.swiper-container_alt{
-    width: 90% !important;
-    margin: 0 auto !important;
 }
 
 .swiper-wrapper{
@@ -2117,4 +1902,234 @@ margin-right: auto;
     line-height: 1.5;
     margin-top: 35px;
     text-align: center;
+}
+
+.blokc10_center{
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.blokc10_center .swiper-container_alt .swiper-wrapper{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+/* Adaptation */
+
+.swiper_slide_alt_show1{
+    display: none;
+}
+
+@media screen and (max-width: 1000px){
+
+    .blokc7_img{
+        width: 95% !important;
+    }
+
+    .swiper_slide_alt{
+        width: 100% !important;
+    }
+
+    .feed-container{
+        height: 110vh !important;
+    }
+
+    .workShem{
+        margin-bottom: 110px !important;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    .block7_cerd{
+        width: 40%;
+    }
+
+    .block7_cerd img{
+        width: 100% !important;
+    }
+
+    .blokc7_img{
+        justify-content: space-around;
+    }
+    
+    .block9_card{
+        width: 55% !important;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .blokc9_center{
+        margin: 500px 0 !important;
+    }
+
+    .blokc9_center_alt{
+        margin-top: 1300px !important;
+        margin-bottom: 750px !important;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .block9_card{
+        width: 80% !important;
+    }
+
+    .feed-container{
+        height: 130vh !important;
+    }
+
+    .block3_inline{
+        margin-top: 0px !important;
+    }
+
+    .textcent{
+        margin-top: 60px;
+    }
+
+    .right{
+        width: 80%;
+    }
+
+    .left{
+        width: 80%;
+    }
+
+    .leftPic{
+        width: 80% !important;
+    }
+
+    .scaryList{
+        margin-bottom: 20px !important;
+    }
+
+    .centerrrtext{
+        margin-bottom: 50px;
+    }
+
+    .inline_up ul{
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 650px){
+
+    .blokc13_center{
+        margin-top: 50px;
+    }
+
+    .scaryList{
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .h11{
+        font-size: 35px !important;
+    }
+
+    .blokc10_center{
+        width: 100%;
+    }
+    
+    .block9_card{
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .block9_card{
+        width: 100% !important;
+    }  
+
+    .feed-container{
+        height: 140vh !important;
+    }
+
+    .blokc13_center{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 520px){
+
+    .feed-container{
+        height: 160vh !important;
+    }
+}
+
+@media screen and (max-width: 470px){
+
+    .feed-container{
+        height: 115vh !important;
+    }
+
+    .blokc13_center{
+        margin-top: 110px;
+    }
+
+    .askContacts{
+        margin-top: 40px;
+    }
+
+    .askContacts form{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .feedbacks{
+        padding: 10px;
+    }
+
+    .openBox{
+        width: 100%;
+    }
+
+    .h11{
+        font-size: 28px !important;
+    }
+
+    .block7_cerd{
+        width: 85%;
+    }
+
+    .blokc9_center{
+        margin: 580px 0 !important;
+    }
+
+    .blokc9_center_alt{
+        margin-top: 1350px !important;
+        margin-bottom: 750px !important;
+    }
+
+    .feed-body p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 430px){
+
+    .blokc9_center_alt{
+        margin-top: 1350px !important;
+        margin-bottom: 750px !important;
+    }
+}
+
+@media screen and (max-width: 423px){
+
+    .feed-container{
+        height: 125vh !important;
+    }
+}
+
+@media screen and (max-width: 385px){
+
+    .feed-container{
+        height: 135vh !important;
+    }
 }
