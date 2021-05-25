@@ -2115,11 +2115,11 @@ margin-right: auto;
 @media screen and (max-width: 430px){
 
     .blokc9_center{
-        margin-top: 580px !important;
+        margin-top: 0px !important;
     }
 
     .blokc9_center_alt{
-        margin-top: 1350px !important;
+        margin-top: 30px !important;
     }
 }
 
