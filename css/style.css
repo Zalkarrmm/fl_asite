@@ -586,7 +586,7 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     justify-content: space-around;
 }
 .banner{
-    width: 350px;
+    width: 100%;
     height: 200px;
     margin-bottom: 0px;
 }
@@ -594,10 +594,11 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
 .card-header{
     text-align: center;
     display: flex;
+    width: 100%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0;
     position: relative;
 }
 
@@ -1078,6 +1079,7 @@ margin-right: auto;
 .blokc7_inline{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
 }
@@ -1355,8 +1357,12 @@ margin-right: auto;
 
 .getNumberInput{
     font-size: 27px;
-    padding: 5px 10px 12px 10px;
+    outline: none;
     border: 1px solid orange;
+    width: 350px;
+    font-size: 15px !important;
+    padding: 13px 13px;
+    box-sizing: border-box;
 }
 .askContacts p{
     font-size: 25px;
@@ -2102,5 +2108,9 @@ margin-right: auto;
     .ul_1 li a{
         text-align: center !important;
         display: block;
+    }
+    
+    .getNumberInput{
+        width: 280px;
     }
 }
