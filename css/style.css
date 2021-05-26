@@ -82,36 +82,46 @@ html{
 
 /* modal */
 .modalWindow{
-    transition: 1s;
+    transition: .5s;
     width: 100%;
     height: 100vh;
-    position: absolute;
-    left: -100%;
+    position: fixed;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    left: 0%;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.61);
+    pointer-events: none;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 3;
 }
 .modalForm{
-    border-radius: 5px;
-    top: 15%;
-    left: 30%;
-    position: absolute;
     background-color: rgb(219, 219, 219);
-    width: 28%;
-    height: 55vh;
+    width: 40%;
     z-index: 32;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
     padding: 50px 60px;
 }
-.modalWindow.getModal{
+
+.modalForm::before{
+    content: "";
     position: absolute;
-    display: block;
-    transition: 1s;
-    left: 0px;
-    top: 0px;
+    border: 3px solid rgb(219, 219, 219);
+    height: 102%;
+    width: 102%;
+    top: -1.5%;
+    left: -1.5%;
+}
+.modalWindow.getModal{
+    pointer-events: all;
+    opacity: 1;
 }
 .modalWindow.noneModal{
     position: absolute;
@@ -123,8 +133,15 @@ html{
 }
 .noneBtn{
     position: absolute;
-    top: 1%;
-    right: 1%;
+    top: 2%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(63, 63, 63);
+    outline: none;
+    font-size: 25px;
+    font-weight: 500;
+    right: 2%;
 }
 .leftPic{
     width: 40%;
@@ -134,17 +151,35 @@ html{
 .orderText{
     font-size: 25px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 .formUl{
     list-style: none;
+    margin: 0px auto;
+    padding: 0px;
+    width: 70%;
 }
 .getNameInput{
     margin-bottom: 10px;
 }
-.formUl li input{
-    padding: 10px 50px 10px 10px;
+.formUl li:nth-child(2){
+    padding-bottom: 15px;
+}
+.formUl li {
+    width: 100%;
+    background: white;
+    align-items: center;
+    display: flex;
     border-radius: 5px;
+    padding: 5px 10px;
     border: solid 1px orange;
+    margin-bottom: 20px;
+}
+.formUl li input{
+    outline: none;
+    margin-top: 10px;
+    width: 90%;
+    border: none;
 }
 .formUl li{
     position: relative;
@@ -159,7 +194,10 @@ html{
     font-size: 12px;
     font-weight: 400;
     text-align: center;
+    width: 100%;
     padding: 0px 30px;
+    display: block;
+    z-index: 5;
 }
 button{
     cursor: pointer;
@@ -169,9 +207,11 @@ button{
     margin-top: 15px;
     border-radius: 5px;
     border: none;
+    z-index: 10;
     outline: none;
     font-size: 15px;
     padding: 15px;
+    cursor: pointer;
     background-color: orange;
 }
 .submitBtn:hover{
@@ -1352,19 +1392,17 @@ margin-right: auto;
     align-items: center ;
 }
 
-.getNumberInput{
-    font-size: 27px;
-    outline: none;
-    border: 1px solid orange;
-    width: 350px;
-    font-size: 15px !important;
-    padding: 13px 13px;
-    box-sizing: border-box;
-}
 .askContacts p{
     font-size: 25px;
     text-align: center;
     width: 100%;
+}
+
+.getNumberInput{
+    width: 350px;
+    border: 1px solid orange;
+    padding: 15px;
+    outline: none;
 }
 
 .blokc11_center{
@@ -1998,6 +2036,10 @@ margin-right: auto;
 
 @media screen and (max-width: 600px){
 
+    .workShem{
+        margin-bottom: 50px !important;
+    }
+
     .blokc6_card{
         width: 80%;
     }
@@ -2024,6 +2066,12 @@ margin-right: auto;
     .blokc13_center{
         margin-top: 80px;
     }
+
+    .askContacts form{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 @media screen and (max-width: 470px){
@@ -2038,11 +2086,6 @@ margin-right: auto;
 
     .askContacts{
         margin-top: 40px;
-    }
-
-    .askContacts form{
-        display: flex;
-        flex-direction: column;
     }
     
     .feedbacks{
@@ -2067,6 +2110,14 @@ margin-right: auto;
 }
 
 @media screen and (max-width: 430px){
+
+    .workShem{
+        margin-bottom: 0px !important;
+    }
+
+    .getNumberInput{
+        width: 250px;
+    }
     
     .swiper-container_alt .swiper-wrapper .swiper-slide{
         width: 100% !important;
@@ -2134,5 +2185,70 @@ margin-right: auto;
 
     .orangeBtn{
         width: 75%;
+    }
+}
+
+/* Modal Adaptation */
+
+@media screen and (max-width: 1200px){
+
+    .modalForm{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+    .modalForm{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .modalForm{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .modalForm{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .modalForm{
+        padding: 30px 40px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .modalForm{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 430px){
+
+    .modalForm{
+        padding: 30px 20px;
+    }
+    
+}
+
+@media screen and (max-width: 385px){
+
+    .modalForm{
+        padding: 20px 10px;
+        padding-bottom: 30px;
+    }
+
+    .orderText{
+        font-size: 20px;
     }
 }

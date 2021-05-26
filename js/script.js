@@ -5,16 +5,10 @@ callBtn.addEventListener('click' , e => {
     e.preventDefault();
     modal.classList.toggle('getModal')
 })
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-        window.location.reload()
-    }
-}
-noneBtn.addEventListener('click' , e=> {
-    e.preventDefault();
-    modal.style.display = "none";
-    window.location.reload()
+
+noneBtn.addEventListener('click' , e => {
+    e.preventDefault()
+    modal.classList.remove('getModal')
 })
 
 // second
