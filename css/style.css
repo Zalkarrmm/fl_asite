@@ -2442,18 +2442,18 @@ margin-right: auto;
 .prevBtn::before{
     content: '';
     position: absolute;
-    background: orange;
+    background: rgb(255, 193, 77);
     height: 150%;
     width: 250%;
     border-radius: 50%;
 }
 
 .nextBtn::before{
-    left: -35px;
+    left: -31px;
 }
 
 .prevBtn::before{
-    right: -35px;
+    right: -31px;
 }
 
 .rightSideText{
