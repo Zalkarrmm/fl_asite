@@ -1038,6 +1038,7 @@ margin-right: auto;
 .blokc6_inlne{
     margin-top: 20px;
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
@@ -1053,16 +1054,13 @@ margin-right: auto;
     transform: translateY(-50px);
 }
 .blokc6_card img{
-    width: 350px;
+    width: 100%;
     height: 300px;
     transition: .3s;
 }
-.blokc6_card2 img{
-    width: 350px;
-    height: 300px;
-
+.blokc6_card{
+    width: 30%;
 }
-
 
 /* blokc7_center */
 
@@ -2098,7 +2096,8 @@ margin-right: auto;
     }
 
     .orangeBtn{
-        width: 100%;
+        width: 65%;
+        margin: 0 auto;
     }
 
     .feed-header{
@@ -2109,8 +2108,11 @@ margin-right: auto;
         text-align: center !important;
         display: block;
     }
-    
-    .getNumberInput{
-        width: 280px;
+}
+
+@media screen and (max-width: 380px){
+
+    .orangeBtn{
+        width: 75%;
     }
 }
