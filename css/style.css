@@ -282,15 +282,6 @@ button{
         justify-content: space-around;
     }
 
-    .blokc9_center{
-        margin: 280px 0 !important;
-    }
-
-    .blokc9_center_alt{
-        margin-top: 700px !important;
-        margin-bottom: 400px !important;
-    }
-    
     .leftPic{
         width: 60% !important;
         height: 70vh !important;
@@ -1150,10 +1141,10 @@ margin-right: auto;
 
 .blokc9_center{
     width: 100%;
-    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 70px;
     align-items: center;
 }
 .blokc9_center h1{
@@ -1941,15 +1932,6 @@ margin-right: auto;
         margin: 0 auto;
         margin-bottom: 30px;
     }
-
-    .blokc9_center{
-        margin: 500px 0 !important;
-    }
-
-    .blokc9_center_alt{
-        margin-top: 1300px !important;
-        margin-bottom: 750px !important;
-    }
 }
 
 @media screen and (max-width: 700px){
@@ -2059,29 +2041,12 @@ margin-right: auto;
         width: 85%;
     }
 
-    .blokc9_center{
-        margin: 580px 0 !important;
-    }
-
-    .blokc9_center_alt{
-        margin-top: 1350px !important;
-        margin-bottom: 750px !important;
-    }
-
     .feed-body p{
         font-size: 15px;
     }
 }
 
 @media screen and (max-width: 430px){
-
-    .blokc9_center{
-        margin-top: 600px !important;
-    }
-
-    .blokc9_center_alt{
-        margin-top: 30px !important;
-    }
     
     .swiper-container_alt .swiper-wrapper .swiper-slide{
         width: 100% !important;
