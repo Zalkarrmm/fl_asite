@@ -309,6 +309,13 @@ button{
     padding: 13px 15px !important;
 }
 
+.feed-header{
+    width: 35% !important;
+}
+
+.feedPic{
+    width: 100% !important;
+}
 @media screen and (max-width:1118px){
 
     .workShem{
@@ -356,17 +363,17 @@ button{
         margin-top: 30px;
         align-items: center !important;
         justify-content: space-around !important;
-        height: 100% !important;
+        height: 450px !important;
     }
 
     .feed-body{
         width: 100% !important;
-        height: 55% !important;
+        height: 60% !important;
     }
 
     .feed-header{
         width: 100% !important;
-        height: 40% !important;
+        height: 250px !important;
     }
 
     .blokc9inline{
@@ -1285,9 +1292,8 @@ margin-right: auto;
     margin-top: 80px;
 }
 .feed-container{
-    width: 100% !important;
+    width: 80% !important;
     display: flex;
-    background: rgb(255, 193, 77);
     justify-content: center;
     align-items: center ;
 }
@@ -1336,7 +1342,6 @@ margin-right: auto;
 .blokc10_center{
     margin-top: 80px;
     width: 100%;
-    overflow: hidden;
 }
 .blokc10_center .swiper-container_alt .swiper-wrapper .swiper-slide{
     width: 48% !important;
@@ -1818,6 +1823,11 @@ margin-right: auto;
     color: grey;
     margin: 0px;
     text-align: center;
+    padding-bottom: 30px;
+}
+.footerText a{
+    text-decoration: none;
+    color: grey;
 }
 @media screen and (max-width:800px){
 
@@ -1863,7 +1873,7 @@ margin-right: auto;
 }
 
 .swiper-container_alt{
-    width: 100% !important;
+    width: 70% !important;
 }
 
 .exaplesBlock{
@@ -1956,6 +1966,10 @@ margin-right: auto;
     display: flex;
 }
 
+.blokc10_center .swiper-container_alt .swiper-wrapper .swiper-slide{
+    width: 100% !important;
+}
+
 /* Adaptation */
 
 .swiper_slide_alt_show1{
@@ -1978,6 +1992,10 @@ margin-right: auto;
 }
 
 @media screen and (max-width: 900px){
+
+    .swiper-container_alt{
+        width: 100% !important;
+    }
 
     .blokc6_card{
         width: 45%;
@@ -2043,7 +2061,7 @@ margin-right: auto;
 }
 
 @media screen and (max-width: 510px){
-
+    
     .orangeBtn{
         width: 60%;
         margin-top: 10px;
@@ -2051,6 +2069,10 @@ margin-right: auto;
 }
 
 @media screen and (max-width: 650px){
+
+    .swiper-container_alt{
+        width: 100% !important;
+    }
 
     .blokc6_card{
         width: 60%;
@@ -2110,6 +2132,24 @@ margin-right: auto;
 
 @media screen and (max-width: 470px){
 
+    .rightSide ul li{
+        border-bottom: 1px solid rgb(71, 71, 71);
+        padding-bottom: 10px;
+    }
+
+    .leftSide{
+        margin-top: 65px;
+    }
+
+    .verticalHr{
+        display: none;
+    }
+
+    .getCollapse{
+        top: 35%;
+        right: -21%;
+    }
+
     .blokc6_card{
         width: 90%;
     }
@@ -2151,6 +2191,44 @@ margin-right: auto;
     display: none;
 }
 @media screen and (max-width: 430px){
+
+    .swiper-container_alt{
+        width: 100% !important;
+    }
+
+    .nextBtn::before,
+    .prevBtn::before{
+        height: 160% !important;
+        width: 130% !important;
+    }
+
+    .nextBtn::before{
+        left: -30px !important;
+    }
+
+    .prevBtn::before{
+        right: -30px;
+    }
+
+    .rightSideText{
+        border-bottom: 1px solid grey;
+        padding-bottom: 10px;
+    }
+
+    .prevBtn,
+    .nextBtn{
+        color: white !important;
+        z-index: 100;
+        text-align: center;
+    }
+
+    .prevBtn{
+        padding-left: 30px;
+    }
+
+    .nextBtn{
+        padding-right: 30px;
+    }
 
     .orangeBtn{
         width: 100%;
@@ -2285,6 +2363,14 @@ margin-right: auto;
 
 @media screen and (max-width: 500px){
 
+    .feedbacks{
+        height: 430px !important;
+    }
+
+    .swiper-container_alt .swiper-wrapper .swiper-slide{
+        width: 350px !important;
+    }
+
     .modalForm{
         width: 90%;
     }
@@ -2292,10 +2378,28 @@ margin-right: auto;
 
 @media screen and (max-width: 430px){
 
+    .feedbacks{
+        height: 390px !important;
+    }
+
     .modalForm{
         padding: 30px 20px;
     }
     
+    .blokc13_center h1,
+    .centerrrtext,
+    .textcent,
+    .h11{
+        font-size: 23px !important;
+    }
+
+    .h13{
+        margin-top: 0px !important;
+    }
+
+    .h12{
+        margin-bottom: 0px !important;
+    }
 }
 
 @media screen and (max-width: 385px){
@@ -2321,4 +2425,38 @@ margin-right: auto;
 .centerText h2,
 .centerText p{
     text-align: center;
+}
+
+.nextBtn::before,
+.prevBtn::before{
+    content: '';
+    position: absolute;
+    background: orange;
+    height: 150%;
+    width: 250%;
+    border-radius: 50%;
+}
+
+.nextBtn::before{
+    left: -35px;
+}
+
+.prevBtn::before{
+    right: -35px;
+}
+
+.rightSideText{
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+}
+
+.prevBtn,
+.nextBtn{
+    color: white !important;
+    z-index: 100;
+}
+
+.nextBtn::after,
+.prevBtn::after{
+    position: absolute;
 }

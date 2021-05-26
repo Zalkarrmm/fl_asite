@@ -771,12 +771,12 @@
         </div>
 
         <div class="blokc10_center">
-            <h1 class="h11">
+            <h1 class="h11 h13">
                 Отзывы наших клиентов
                 <hr class="block5Hr">
             </h1>
             
-            <div class="swiper-container swiper-container_alt mySwiper">
+            <div class="swiper-container swiper-container_alt mySwiperOne">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="feed-container">
@@ -857,8 +857,8 @@
                         </div>  
                     </div>
                 </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next nextBtn"></div>
+                    <div class="swiper-button-prev prevBtn"></div>
             </div>
                 <h1 class="h11 h12">
                 Удобная схeма работы
@@ -1011,7 +1011,7 @@
         </footer>
     </div>
     <div class="footerText">
-        <p>Политика конфиденциальности</p>
+        <a href="#">Политика конфиденциальности</a>
     </div>
     <script defer src="js/script.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -1027,6 +1027,17 @@
             el: ".swiper-pagination",
             clickable: true,
         },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+     <script>
+        var swiper = new Swiper(".mySwiperOne", {
+        autoplay: true,
+        slidesPerView: 1,
+        freeMode: true,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
