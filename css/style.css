@@ -716,7 +716,7 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     overflow: hidden;
 }
 .cover{
-    object-fit: cover   ;
+    object-fit: cover;
 }
 .card_stares:hover{
     margin-bottom: 10vh;
@@ -2132,6 +2132,11 @@ margin-right: auto;
 
 @media screen and (max-width: 470px){
 
+    .blokc4_center{
+        margin: 0 auto;
+        width: 90%;
+    }
+
     .rightSide ul li{
         border-bottom: 1px solid rgb(71, 71, 71);
         padding-bottom: 10px;
@@ -2378,6 +2383,12 @@ margin-right: auto;
 
 @media screen and (max-width: 430px){
 
+    .prevBtn,
+    .nextBtn{
+        color: white !important;
+        z-index: 100;
+    }
+
     .feedbacks{
         height: 390px !important;
     }
@@ -2459,4 +2470,11 @@ margin-right: auto;
 .nextBtn::after,
 .prevBtn::after{
     position: absolute;
+}
+
+@media screen and (max-width: 365px){
+
+    .card_stares:hover{
+        height: 65vh !important;
+    }
 }
