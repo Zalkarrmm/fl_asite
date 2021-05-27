@@ -10,11 +10,19 @@ html{
 /* up */
 .center_up{
     width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
     display: flex;
 }
-
 .center_up_alt{
     margin-top: 40px;
+}
+.flexed li{
+    font-size: 10px;
+}
+.ul_3{
+    margin-top: 10px;
 }
 .inline_up{
     padding: 0px 30px;
@@ -72,7 +80,7 @@ html{
     transition: .5s;
 }
 .logoImg{
-    width: 300px;
+    width: 150px;
     height: auto;
 }
 @media(max-width:992px){
@@ -146,8 +154,8 @@ html{
     right: 2%;
 }
 .leftPic{
-    width: 40%;
-    height: 60vh;
+    width: 28%;
+    height: 407px;
     object-fit: cover;
 }
 .orderText{
@@ -223,7 +231,7 @@ button{
 
 
 .blokc1_center{
-    margin-top: 50px !important;
+    margin-top: 10px !important;
 }
 .blokc1_inline{
     display: flex;
@@ -233,7 +241,8 @@ button{
 }
 
 .right{
-    width: 28%;
+    margin-right: 5px;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,7 +258,8 @@ button{
 }
 
 .right ul{
-    width: 60%;
+    width: 80%;
+    height: 80%;
 }
 .right li{
     position: relative;
@@ -257,6 +267,7 @@ button{
     list-style: none;
     font-size: 20px;
     margin: 5px 0px;
+    line-height: 40px;
     font-weight: bold;
     transition: .3s;
 }
@@ -280,6 +291,7 @@ button{
     transition: .3s;
 }
 .infos{
+    font-weight: 400 !important;
     display: flex;
     align-items: center;
 }
@@ -313,13 +325,10 @@ button{
     width: 35% !important;
 }
 
-.feedPic{
-    width: 100% !important;
-}
-@media screen and (max-width:1118px){
 
-    .workShem{
-        margin-bottom: 70px !important;
+@media screen and (max-width:1118px){
+    .right{
+        height: auto;
     }
 
     .blokc9_center_alt .block9_card{
@@ -340,7 +349,7 @@ button{
 
     .leftPic{
         width: 60% !important;
-        height: 70vh !important;
+        height: auto !important;
         margin-bottom: 40px;
     }
 
@@ -373,7 +382,7 @@ button{
 
     .feed-header{
         width: 100% !important;
-        height: 250px !important;
+        height: 200px !important;
     }
 
     .blokc9inline{
@@ -403,6 +412,10 @@ button{
 }
 /* sixblock */
 @media(max-width:450px){
+    .rightSide ul{
+        margin-top: -100px;
+        list-style: none;
+    }
     .right li{
         font-size: 20px;
     }
@@ -434,6 +447,15 @@ button{
     }
     
 }
+.blokc2_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.askPish{
+    font-size: 20px !important;
+}
 .whiteBtn{
     background-color: white;
     outline: none;
@@ -442,7 +464,17 @@ button{
     font-size: 15px;
     padding: 15px 20px;
 }
-
+.text_blokc4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.border{
+    /* background-color: blue; */
+    border: 2px solid orange;
+    width: 80%;
+}
 /* blokc2_center */
 .orangeBtn{
         padding: 15px;
@@ -538,6 +570,9 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
 
 
 @media(max-width:509px){
+    .input{
+        width: 90% !important;
+    }
     .input1{
         display: flex;
         flex-direction: column;
@@ -628,7 +663,7 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     width: 100%;
     margin-top: 20vh;
 }
-.h11 {
+.h11{
     text-align: center;
     margin: 40px 0;
 }
@@ -675,7 +710,6 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     margin: 0 auto;
     width: 85%;
 }
-
 .card_stares img{
     object-fit: cover;
 }
@@ -700,10 +734,9 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
 }
 
 .banner_2{
-    text-align: left;
     display: none;
     transition: 0.5s;
-    padding: 20px;
+    padding: 0px;
     margin-top: 0px !important;
     padding-top: 0px !important;
 }
@@ -719,7 +752,8 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     object-fit: cover;
 }
 .card_stares:hover{
-    margin-bottom: 10vh;
+    height: auto;
+    max-height: 40vh;
     background-color: rgb(255, 193, 77);
 }
 .card_stares:hover .banner_2{
@@ -729,9 +763,6 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     color: white;
 }
 
-.card_stares:hover .banner_2 p{
-    line-height: 1.6;
-}
 
 .whiteBtn{
     margin: 0 auto;
@@ -741,10 +772,6 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     background-color: rgba(255, 255, 255, 0);
     padding-bottom: 0px;
     padding-top: 30px;
-}
-.card_stares:hover{
-    padding-bottom: 20vh;
-    height: 50vh !important;
 }
 /* .card_stares{
     position: relative;
@@ -1032,7 +1059,7 @@ margin-right: auto;
 .openBox{
     width: 60%;
     margin-top: 20px;
-    height: 50vh;
+    height: auto;
     border-top: 0px !important;
     border: 1px black solid;
     position: relative;
@@ -1376,7 +1403,6 @@ margin-right: auto;
         width: 300px;
     }
 }
-
 .workShem{
     width: 100%;
     display: flex;
@@ -1393,9 +1419,7 @@ margin-right: auto;
     align-items: center;
     height: 50vh;
 }
-.rightSide ul{
-    list-style: none;
-}
+
 .verticalHr{
     width: 1px;
     height: 70%;
@@ -1417,8 +1441,8 @@ margin-right: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center ;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .askContacts p{
@@ -1583,6 +1607,9 @@ margin-right: auto;
     }
 }
 @media(max-width:728px){
+    .git_init iframe{
+        height: 200px !important;
+    }
     .blokc13_inline img{
         width: 100%;
         
@@ -1726,12 +1753,16 @@ margin-right: auto;
 }
 
 .git_init{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     margin: 0 auto;
 }
 
 .git_init iframe{
-    width: 100%;
+    width: 90%;
     height: 400px;
 }
 .footer{
@@ -1780,6 +1811,11 @@ margin-right: auto;
 }
 
 @media(max-width:552px){
+    .card_stares:hover{
+        height: auto;
+        max-height: 35vh;
+        background-color: rgb(255, 193, 77);
+    }
     .footer p{
         font-size: 20px;
         width: 90%;
@@ -1992,7 +2028,13 @@ margin-right: auto;
 }
 
 @media screen and (max-width: 900px){
-
+    .leftSideItems img{
+        width: 35px;
+        height: 35px;
+    }
+    .centerrrtext{
+        font-size: 20px !important;
+    }
     .swiper-container_alt{
         width: 100% !important;
     }
@@ -2060,10 +2102,10 @@ margin-right: auto;
     }
 }
 
-@media screen and (max-width: 510px){
+@media screen and (max-width:510px){
     
     .orangeBtn{
-        width: 60%;
+        width: 60% !important;
         margin-top: 10px;
     }
 }
@@ -2085,21 +2127,28 @@ margin-right: auto;
     .scaryList{
         width: 80% !important;
     }
+    .orangeBtn{
+        margin-top: 5px;
+    }
 }
 
 @media screen and (max-width: 600px){
-
     .workShem{
-        margin-bottom: 50px !important;
+        height: 50vh !important;
+    }
+    .blokc13_inline img{
+        width: 80%;
+        
+        box-shadow: 0px 5px 20px black;
+        height: 200px;
+        margin: 20px 20px;
     }
 
     .blokc6_card{
         width: 80%;
     }
 
-    .h11{
-        font-size: 35px !important;
-    }
+    
 
     .blokc10_center{
         width: 100%;
@@ -2113,9 +2162,19 @@ margin-right: auto;
         margin-bottom: 20px;
     }
 }
+@media screen and (max-width: 550px ){
+    .card_stares:hover .banner_2 p{
+        margin-top: 1px !important;
+    }
+}
+
 
 @media screen and (max-width: 550px){
-
+    /*  */
+    
+    .leftSide{
+        line-height: 40px;
+    }
     .block9_card{
         width: 100% !important;
     }  
@@ -2129,23 +2188,22 @@ margin-right: auto;
         flex-direction: column;
     }
 }
-
+.rightSide ul li{
+        border-bottom: 1px solid rgb(71, 71, 71);
+        padding-bottom: 0px;
+}
+.leftSide{
+    height: auto;
+}
+.rightSide{
+    height: 50vh;
+}
 @media screen and (max-width: 470px){
 
     .blokc4_center{
         margin: 0 auto;
         width: 90%;
     }
-
-    .rightSide ul li{
-        border-bottom: 1px solid rgb(71, 71, 71);
-        padding-bottom: 10px;
-    }
-
-    .leftSide{
-        margin-top: 65px;
-    }
-
     .verticalHr{
         display: none;
     }
@@ -2192,11 +2250,11 @@ margin-right: auto;
 .ulHeader{
     padding: 0px;
 }
-.banner_2{
-    display: none;
+.rightSideText{
+    border-bottom: 1px solid grey;
+    line-height: 30px;
 }
-@media screen and (max-width: 430px){
-
+@media screen and(max-width:430px){
     .swiper-container_alt{
         width: 100% !important;
     }
@@ -2215,10 +2273,7 @@ margin-right: auto;
         right: -30px;
     }
 
-    .rightSideText{
-        border-bottom: 1px solid grey;
-        padding-bottom: 10px;
-    }
+   
 
     .prevBtn,
     .nextBtn{
@@ -2264,13 +2319,7 @@ margin-right: auto;
         width: 150px;
     }
 
-    .workShem{
-        margin-bottom: 0px !important;
-    }
-
-    .getNumberInput{
-        width: 250px;
-    }
+    
     
     .swiper-container_alt .swiper-wrapper .swiper-slide{
         width: 100% !important;
@@ -2342,6 +2391,9 @@ margin-right: auto;
     .modalForm{
         width: 60%;
     }
+    .center_up{
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -2352,14 +2404,15 @@ margin-right: auto;
 }
 
 @media screen and (max-width: 700px){
-
+    .h11{
+        font-size: 25px !important;
+    }
     .modalForm{
         width: 80%;
     }
 }
 
 @media screen and (max-width: 600px){
-
     .modalForm{
         padding: 30px 40px;
         padding-bottom: 50px;
@@ -2367,7 +2420,9 @@ margin-right: auto;
 }
 
 @media screen and (max-width: 500px){
-
+    .getNumberInput{
+        width: 250px;
+    }
     .feedbacks{
         height: 430px !important;
     }
@@ -2414,7 +2469,9 @@ margin-right: auto;
 }
 
 @media screen and (max-width: 385px){
-
+    .getNumberInput{
+        width: auto;
+    }
     .modalForm{
         padding: 20px 10px;
         padding-bottom: 30px;
@@ -2424,9 +2481,7 @@ margin-right: auto;
         font-size: 20px;
     }
 
-    .card_stares:hover .banner_2{
-        margin-top: 50px !important;
-    }
+    
 
     .card_stares:hover .bText{
         padding-top: 0px;
