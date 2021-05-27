@@ -1056,6 +1056,15 @@ margin-right: auto;
     text-align: center;
     padding: 60px 20px;
 }
+.blokc6_card2 {
+    height:100px !important;
+    z-index: 2;
+}
+.blokc6_card2 img{
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
 .openBox{
     width: 60%;
     margin-top: 20px;
@@ -1415,20 +1424,26 @@ margin-right: auto;
 }
 /* blokc11_center */
 .rightSide{
-    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 50vh;
 }
-
+.rightSide ul li{   
+    position: relative;
+    list-style: none;
+}
+.leftSideItems{
+    right: 0px;
+    position: absolute;
+}
 .verticalHr{
     width: 1px;
     height: 70%;
     background-color: grey;
 }
-.leftSideItems img{
+.leftSideItems{
     width: 45px;
     height: 45px;
 }
@@ -2034,7 +2049,7 @@ margin-right: auto;
 }
 
 @media screen and (max-width: 900px){
-    .leftSideItems img{
+    .leftSideItems{
         width: 35px;
         height: 35px;
     }
