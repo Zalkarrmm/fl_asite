@@ -1757,6 +1757,9 @@ margin-right: auto;
 .navTopNum{
     width: 200px;
 }
+.navTopNum a{
+    font-size: 13px;
+}
 /*  */
 .blokc16_inline{
     display: flex;
