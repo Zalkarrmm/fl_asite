@@ -382,7 +382,7 @@ button{
 
     .feed-header{
         width: 100% !important;
-        height: 40% !important;
+        height: 100% !important;
     }
 
     .blokc9inline{
@@ -753,7 +753,7 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
 }
 .card_stares:hover{
     height: auto;
-    max-height: 40vh;
+    max-height: 45vh;
     background-color: rgb(255, 193, 77);
 }
 .card_stares:hover .banner_2{
@@ -761,6 +761,10 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     text-align: center;
     background-color: rgb(255, 193, 77);
     color: white;
+}
+.card_stares:hover img{
+    transform: scale(1.07);
+    transition: .5sf;
 }
 .feed-body{
     text-align: left;
@@ -845,7 +849,8 @@ input[type="text1"]::placeholder { color: black; font-size: 15px; }
 }
 @media(max-width:526px){
     .card_stares:hover{
-        padding-bottom: 160px;
+        padding-top: 20px;
+        padding-bottom: 260px;
     }
     .banner_2 p{
         margin-top: -50px;
@@ -1303,20 +1308,9 @@ margin-right: auto;
 .blokc10_center .swiper-container .swiper-slide{
     width: 750px !important;
 }
-
-.feedbacks{
-    padding: 30px;
-    border-radius: 5px;
-    color: white;
-    width: 100% !important;
-    display: flex;
-    align-items: center ;
-    justify-content: space-around;
-    background-color: rgba(255, 184, 53, 0.671)
-}
 .feed-header{
     width: 200px;
-    height: 200px;
+    height: auto;
     border-radius: 10px;
 }
 .feed-body{
@@ -1326,8 +1320,8 @@ margin-right: auto;
     color: rgb(250, 250, 250);
 }
 .feedPic{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: auto;
 }
 
 .h12{
@@ -2182,6 +2176,9 @@ margin-right: auto;
     .openBox ul li{
         margin-bottom: 20px;
     }
+}
+.banner_2 p{
+    margin-top: -15px;
 }
 @media screen and (max-width: 550px ){
     .card_stares:hover .banner_2 p{
