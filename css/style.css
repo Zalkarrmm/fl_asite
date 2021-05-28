@@ -237,12 +237,12 @@ button{
 .blokc1_inline{
     display: flex;
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 
 .right{
-    background: url('../img/вин2.jpg')center/cover; 
+    background: url('../img/01.jpg')center/cover; 
     z-index: 1;
     position: relative;
     margin-right: 5px;
