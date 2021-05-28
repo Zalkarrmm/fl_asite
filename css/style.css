@@ -1056,14 +1056,15 @@ margin-right: auto;
     text-align: center;
     padding: 60px 20px;
 }
-.blokc6_card2 {
-    height:100px !important;
-    z-index: 2;
-}
-.blokc6_card2 img{
+.blokc6_card img{
+    height: 250px;
     object-fit: cover;
     position: relative;
     z-index: 1;
+}
+.block7_cerd:hover img{
+    transform: scale(1.08) !important;
+    transition: .3s;
 }
 .openBox{
     width: 60%;
@@ -1417,7 +1418,7 @@ margin-right: auto;
 }
 .workShem{
     width: 100%;
-    display: flex;
+    display: flex !important; 
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
@@ -1434,10 +1435,6 @@ margin-right: auto;
     position: relative;
     list-style: none;
 }
-.leftSideItems{
-    right: 0px;
-    position: absolute;
-}
 .verticalHr{
     width: 1px;
     height: 70%;
@@ -1451,7 +1448,6 @@ margin-right: auto;
     list-style: none;
 }
 .short{
-    width: 100% !important;
     border: none;
 }
 /*  */
@@ -1688,10 +1684,10 @@ margin-right: auto;
     background-color: rgb(231, 229, 229);
     color: grey;
 }
-.collapsed ,.collapsed2, .collapsedd ,.collapsedd2{
+.collapsed ,.collapsed2, .collapsedd ,.collapsedd2 , .collapsedd1{
     display: none;
 }
-.collapsed.d-block , .collapsedd.d-block , .collapsed2.d-block , .collapsedd2.d-block{
+.collapsed.d-block , .collapsedd.d-block , .collapsed2.d-block , .collapsedd2.d-block , .collapsedd1.d-block{
     width: 70%;
    display: block;
     transition: .5s;
@@ -2059,11 +2055,6 @@ margin-right: auto;
     .swiper-container_alt{
         width: 100% !important;
     }
-
-    .blokc6_card{
-        width: 45%;
-        margin-bottom: 40px;
-    }
     .blokc6_card{
         width: 45%;
         margin-bottom: 40px;
@@ -2278,6 +2269,10 @@ margin-right: auto;
 .rightSideText{
     border-bottom: 1px solid grey;
     line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
 }
 @media screen and(max-width:430px){
     .swiper-container_alt{
