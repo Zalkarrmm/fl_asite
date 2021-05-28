@@ -9,6 +9,7 @@ html{
 }
 /* up */
 .center_up{
+    padding: 10px 0px;
     width: 100%;
     height: 100px;
     justify-content: center;
@@ -18,8 +19,8 @@ html{
 .center_up_alt{
     margin-top: 40px;
 }
-.flexed li{
-    font-size: 10px;
+.flexed li a i{
+    font-size: 30px;
 }
 .ul_3{
     margin-top: 10px;
@@ -237,10 +238,13 @@ button{
     display: flex;
     width: 100%;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .right{
+    background: url('../img/вин2.jpg')center/cover; 
+    z-index: 1;
+    position: relative;
     margin-right: 5px;
     width: 40%;
     display: flex;
@@ -249,7 +253,16 @@ button{
     height: 400px;
     transition: 1s;
     text-align: left;
-    border: 4px solid orange;
+    border: 4px solid orange; 
+}
+.darkless{
+    z-index: 3;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.432);
 }
 .right:hover{
     background-color: rgba(255, 230, 0, 0.24);
@@ -262,12 +275,14 @@ button{
     height: 80%;
 }
 .right li{
+    z-index: 23;
     position: relative;
     left: -15px;
     list-style: none;
-    font-size: 20px;
+    font-size: 25px;
     margin: 5px 0px;
     line-height: 40px;
+    color: white;
     font-weight: bold;
     transition: .3s;
 }
@@ -624,8 +639,8 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     justify-content: center;
 }
 .block3_inline img{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     margin: 0px 90px;
     display: flex;
     transition: 1s;
@@ -664,8 +679,12 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     margin-top: 20vh;
 }
 .h11{
+    color: #403b3b;
     text-align: center;
     margin: 40px 0;
+}
+.centerrrtext , .centerText{
+    color: #403b3b ;
 }
 .block4_inline{
     height: auto;
@@ -758,7 +777,7 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
 }
 .card_stares:hover .banner_2{
     display: block !important;
-    text-align: center;
+    text-align: left;
     background-color: rgb(255, 193, 77);
     color: white;
 }
@@ -843,17 +862,13 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     padding: 12px 20px;
     background-color: orange;
 }
-input[type="text1"]::placeholder { color: black; font-size: 15px; } 
+input[type="text1"]::placeholder { color: grey; font-size: 15px; } 
 .card_stares:hover{
     padding-bottom: 160px;
 }
 @media(max-width:526px){
     .card_stares:hover{
-        padding-top: 20px;
         padding-bottom: 260px;
-    }
-    .banner_2 p{
-        margin-top: -50px;
     }
 }
 @media(max-width:486px){
