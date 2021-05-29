@@ -792,8 +792,9 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     object-fit: cover;
 }
 .card_stares:hover{
+    transition: .5s;
     height: auto;
-    max-height: 45vh;
+    max-height: 65vh;
     background-color: rgb(255, 193, 77);
 }
 .card_stares:hover .banner_2{
@@ -803,8 +804,10 @@ input[type="text"]::placeholder { color: black; font-size: 15px; }
     color: white;
 }
 .card_stares:hover img{
-    transform: scale(1.07);
-    transition: .5sf;
+    transform: scale(1.1);
+    height: 400px;
+    transition: .5s;
+    margin-bottom: 15px;    
 }
 .feed-body{
     text-align: left;
@@ -1653,6 +1656,9 @@ margin-right: auto;
     }
 }
 @media(max-width:728px){
+    .card_stares:hover .banner{
+        margin-bottom: 20px;
+    }
     .git_init iframe{
         height: 200px !important;
     }
@@ -1862,7 +1868,7 @@ margin-right: auto;
 @media(max-width:552px){
     .card_stares:hover{
         height: auto;
-        max-height: 35vh;
+        max-height: 52vh;
         background-color: rgb(255, 193, 77);
     }
     .footer p{
