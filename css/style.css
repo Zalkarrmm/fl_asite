@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Georgia';
     src: local('Georgia Bold'), local('Georgia-Bold'),
         url('fonts/Georgia-Bold.woff2') format('woff2'),
@@ -14,7 +14,7 @@
         url('fonts/Georgia.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+} */
 body{
     margin: 0;
     padding: 0;
@@ -466,7 +466,7 @@ button{
 /* sixblock */
 @media(max-width:450px){
     .rightSide ul{
-        margin-top: -100px;
+        margin: 0px;
         list-style: none;
     }
     .right li{
@@ -914,7 +914,7 @@ input[type="text1"]::placeholder { color: grey; font-size: 15px; }
 }
 @media(max-width:486px){
     .blokc4_input input{
-        width: 250px;
+        width: 80%;
         outline: 0;
         border: 0;
         background-color: rgba(220, 220, 220, 0.568);
@@ -1477,6 +1477,7 @@ margin-right: auto;
 }
 /* blokc11_center */
 .rightSide{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1884,7 +1885,7 @@ margin-right: auto;
 
 @media(max-width:552px){
     .flexed{
-        margin-top: -50px !important;
+        margin-top: -20px !important;
     }
     .topGo{
         bottom: 7%;
