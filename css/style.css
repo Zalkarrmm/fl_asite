@@ -1897,7 +1897,7 @@ margin-right: auto;
     }
     .card_stares:hover{
         height: auto;
-        max-height: 55vh;
+        max-height: 470px !important;
         background-color: rgb(255, 193, 77);
     }
     .footer p{
