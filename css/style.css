@@ -1897,7 +1897,7 @@ margin-right: auto;
     }
     .card_stares:hover{
         height: auto;
-        max-height: 52vh;
+        max-height: 55vh;
         background-color: rgb(255, 193, 77);
     }
     .footer p{
@@ -2261,7 +2261,9 @@ margin-right: auto;
     .block9_card{
         width: 100% !important;
     }  
-
+    .card_stares:hover{
+        height: 1220vh;
+    }
     .blokc13_center{
         margin-top: 80px;
     }
@@ -2617,6 +2619,6 @@ margin-right: auto;
 @media screen and (max-width: 365px){
 
     .card_stares:hover{
-        height: 65vh !important;
+        height: 265vh !important;
     }
 }
